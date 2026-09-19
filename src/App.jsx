@@ -1,121 +1,54 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
+    <div className="pagina">
+      <header className="encabezado">
+        <h1>¡Hola! Soy Aylith Valeria</h1>
+        <p>Bienvenidos a mi página personal creada con React</p>
+      </header>
+
+      <main className="contenido">
+        <section className="tarjeta">
+          <img
+            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085"
+            alt="Computador portátil en un espacio de trabajo"
+            className="imagen"
+          />
+
+          <h2>Conociendo React</h2>
+
           <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
+            Soy estudiante de Ingeniería de Sistemas y estoy aprendiendo
+            a desarrollar aplicaciones web utilizando React.
+            Este proyecto me permite poner en práctica mis conocimientos
+            de componentes, JSX y estilos CSS.
           </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
 
-      <div className="ticks"></div>
+          <h3>Sobre mi proyecto</h3>
 
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
+          <p>
+            Mi objetivo es crear interfaces atractivas, organizadas
+            e interactivas, mientras continúo fortaleciendo mis
+            habilidades en el desarrollo web.
+          </p>
 
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
+          <div className="etiquetas">
+            <span>React</span>
+            <span>JavaScript</span>
+            <span>CSS</span>
+          </div>
+
+          <button onClick={() => alert('¡Gracias por visitar mi página!')}>
+            ¡Conoce mi proyecto!
+          </button>
+        </section>
+      </main>
+
+      <footer className="pie">
+        <p>Proyecto académico | Conociendo React | 2026</p>
+      </footer>
+    </div>
   )
 }
 
